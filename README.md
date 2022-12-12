@@ -6,7 +6,7 @@ To use, clone repo and run `make build` to build the docker image. This will tak
 
 Once the image has been successfully built, run `make start` to start a container running the image.
 
-The database tables are initialised and populated upon starting the container, and **you will be unable to connect to the postgres database until this has been completed** - this will take at least around 5-10 minutes!
+The database tables are initialised and populated upon starting the container for the first time, and **you will be unable to connect to the postgres database until this has been completed** - this will take at least around 5-10 minutes! However, once the docker container has been started and the database populated for the first time, you may stop *(but not remove)* the container without having to repopulate it on subsequent starts.  
 
 You may then connect to and browse the database using your preferred postgres client, using the following settings and credentials:
 ```
