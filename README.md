@@ -12,7 +12,7 @@ The database tables are initialised and populated upon starting the container fo
 
 However, once the docker container has been started and the database populated for the first time, you may stop *(but not remove)* the container without having to repopulate it on subsequent starts.  
 
-You may then connect to and browse the database using your preferred postgres client, using the following settings and credentials:
+You may then connect to and browse the database using your preferred postgres client (psql, pgAdmin, etc.), using the following settings and credentials:
 ```
 host: localhost
 port: 5432
