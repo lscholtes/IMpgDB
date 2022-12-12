@@ -22,3 +22,6 @@ database: imdb
 ```
 
 Note that the total size of the database is currently around 6GB.
+
+### Database schema
+![impgdb schema](resources/impgdb_schema.png)
