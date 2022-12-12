@@ -14,3 +14,5 @@ user: postgres
 password: docker
 database: imdb
 ```
+
+Note that the total size of the database is currently around 6GB.
