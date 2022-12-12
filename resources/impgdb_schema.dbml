@@ -1,0 +1,59 @@
+Table title.akas {
+    titleId text [ref:> title.basics.tconst]
+    ordering integer
+    title text
+    region text
+    language text
+    types text
+    attributes text
+    isOriginalTitle boolean
+}
+
+Table title.basics {
+  tconst text [pk]
+  titleType text
+  primaryTitle text
+  originalTitle text
+  isAdult boolean
+  startYear integer
+  endYear integer
+  runtimeMinutes integer
+  genres text
+}
+
+Table title.crew {
+  tconst text [ref:> title.basics.tconst]
+  directors text [ref:> name.basics.nconst]
+  writers text [ref:> name.basics.nconst]
+}
+
+Table title.episode{
+  tconst text [ref:> title.basics.tconst]
+  parentTconst text [ref:> title.basics.tconst]
+  seasonNumber integer
+  episodeNumber integer
+}
+
+Table title.principals{
+  tconst text [ref:> title.basics.tconst]
+  ordering integer
+  nconst string [ref:> name.basics.nconst]
+  category text
+  job text
+  characters text
+}
+
+Table title.ratings{
+  tconst text [ref:>  title.basics.tconst]
+  averageRating numeric
+  numVotes integer
+}
+
+Table name.basics {
+  nconst text [pk]
+  primaryName text 
+  birthYear integer
+  deathYear integer
+  primaryProfession text
+  knownForTitles text [ref:> title.basics.tconst]
+}
