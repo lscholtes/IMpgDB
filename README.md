@@ -2,7 +2,7 @@
 
 Scripts to setup and populate a postgres instance for the [IMDB database](https://www.imdb.com/interfaces/).
 
-I wrote this primarily so that I'd have a somewhat interesting database that I could practice my SQL against.
+I wrote this primarily so that I'd have an interesting database that I could practice my SQL against.
 
 To use, clone repo and run `make build` to build the docker image. This will take a few minutes at least, depending on your internet connection, as it requires downloading around a gigabyte of raw data from [here](https://datasets.imdbws.com/).
 
